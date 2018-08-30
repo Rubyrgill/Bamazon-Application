@@ -67,8 +67,10 @@ var promptCustomer = function (res) {
                     if ((res[id].stockquantity - answer.quant) > 0) {
                         connection.query("UPDATE products SET stockquantity='" + (res[id].stockquantity - answer.quant) + "'WHERE productname='" + product + "'", function (err, res2) {
                             createTable();
+                            var totalCost = answer.quant * res[id].price;
                             console.log("\n" + "--------------------------------" + "\n");
-                            console.log("YOU BOUGHT A PRODUCT" + "\n");
+                            console.log("\n" + "YOU BOUGHT A PRODUCT" + "\n");
+                            console.log("TOTAL COST: $ " + totalCost + "\n");
                             console.log("--------------------------------" + "\n");
                         })
                         //if zero quanitity, let user know...
