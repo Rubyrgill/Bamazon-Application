@@ -49,22 +49,23 @@ Amazon-like storefront using MySQL & Node.js
    * Prompt one will display to ask if customer wants to order product
   ```
   <img width="545" alt="screen shot 2018-08-30 at 5 45 50 pm" src="https://user-images.githubusercontent.com/38548548/44881659-6aa73580-ac7e-11e8-8953-b6d88ca2bb1b.png">
-
-   #### 4. Press C to Cancel
-  ```
-   * To exit the store order option press "C" 
-  ```
   
-   #### 5. Invalid Order
+  <img width="361" alt="screen shot 2018-08-30 at 5 45 58 pm" src="https://user-images.githubusercontent.com/38548548/44881667-6f6be980-ac7e-11e8-89c3-a2f33618512a.png">
+  
+   #### 4. Invalid Order
   ```
    * If customer enters product that is NOT listed, terminal will display message
   ```
-  <img width="361" alt="screen shot 2018-08-30 at 5 45 58 pm" src="https://user-images.githubusercontent.com/38548548/44881667-6f6be980-ac7e-11e8-89c3-a2f33618512a.png">
+    <img width="553" alt="screen shot 2018-08-30 at 5 48 53 pm" src="https://user-images.githubusercontent.com/38548548/44881694-83175000-ac7e-11e8-8c81-e1b852bfae9b.png">
 
-   #### 6. Sold Out
+   #### 5. Sold Out
   ```
    * If the quantity entered is higher then the stock quantity of the product then sold out message will appear
   ```
-  <img width="553" alt="screen shot 2018-08-30 at 5 48 53 pm" src="https://user-images.githubusercontent.com/38548548/44881694-83175000-ac7e-11e8-8c81-e1b852bfae9b.png">
 <img width="595" alt="screen shot 2018-08-30 at 5 50 39 pm" src="https://user-images.githubusercontent.com/38548548/44881709-8dd1e500-ac7e-11e8-9fca-7daba16dbb97.png">
+
+   #### 6. Press C to Cancel
+  ```
+   * To exit the store order option press "C" 
+  ```
 
