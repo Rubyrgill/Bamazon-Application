@@ -67,16 +67,16 @@ var promptCustomer = function (res) {
                     if ((res[id].stockquantity - answer.quant) > 0) {
                         connection.query("UPDATE products SET stockquantity='" + (res[id].stockquantity - answer.quant) + "'WHERE productname='" + product + "'", function (err, res2) {
                             createTable();
-                            console.log("--------------------------------" + "\n");
+                            console.log("\n" + "--------------------------------" + "\n");
                             console.log("YOU BOUGHT A PRODUCT" + "\n");
                             console.log("--------------------------------" + "\n");
                         })
                         //if zero quanitity, let user know...
                     } else {
-                        promptCustomer(res);
-                        console.log("--------------------------------" + "\n");
+                        console.log("\n" + "--------------------------------" + "\n");
                         console.log("ITEM IS SOLD OUT!" + "\n");
                         console.log("--------------------------------" + "\n");
+                        promptCustomer(res);
                     }
 
                 })
@@ -84,10 +84,10 @@ var promptCustomer = function (res) {
         }
         //If input does not match item listed...
         if (i == res.length && correct == false) {
-            promptCustomer(res);
-            console.log("--------------------------------" + "\n");
+            console.log("\n" + "--------------------------------" + "\n");
             console.log("INVALID CHOICE!" + "\n");
             console.log("--------------------------------" + "\n");
+            promptCustomer(res);
         }
     })
 }
